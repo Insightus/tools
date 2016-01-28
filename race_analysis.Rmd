@@ -34,7 +34,7 @@ The raw data used in this analysis is a set of individual race results including
 library(readr)
 
 # Read in the raw race results
-results_df <- read_csv('output/results_charlotte_half.csv')
+results_df <- read_csv('results_charlotte_half.csv')
 
 # Show the top of the dataframe
 kable(head(results_df))
@@ -51,7 +51,7 @@ To compare across age and gender, ranks and percentiles within categories and ag
 library(dplyr)
 
 # Source the age group assignment function
-source('R/group_age.R')
+source('group_age.R')
 
 # Create the age groups
 results_df <- results_df %>%
